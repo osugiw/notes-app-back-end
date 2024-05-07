@@ -55,25 +55,25 @@ const getAllNotesHandler = () => ({
 // Get note data by ID
 const getNoteByIdHandler = (request, h) => {
     const { id } = request.params;
-    
-    const note = notes.filter((n) => n.id === id[0]);
-    
-    if(note !== undefined){
-        return {
-            status: 'success',
-            data: {
-                note,
-            }
-        };
+   
+    const note = notes.filter((n) => n.id === id)[0];
+   
+    if (note !== undefined) {
+      return {
+        status: 'success',
+        data: {
+          note,
+        },
+      };
     }
-
+   
     const response = h.response({
-        status: 'fail',
-        message: 'Note is not found!'
+      status: 'fail',
+      message: 'Catatan tidak ditemukan',
     });
     response.code(404);
     return response;
-};
+  };
 
 // Edit note by ID
 const editNoesByIdHandler = (request, h) => {
