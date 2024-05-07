@@ -1,0 +1,1 @@
+This source codes are implemented in AWS EC2 Instance for Back-end service. To test the webserver, you can visit this website: _http://notesapp-v1.dicodingacademy.com/_ and enter your server public ip address
