@@ -2,7 +2,7 @@ const {
     addNoteHandler, 
     getAllNotesHandler, 
     getNoteByIdHandler, 
-    editNoesByIdHandler, 
+    editNoteByIdHandler, 
     deleteNoteByIdHandler
 } = require("./handler");
 
