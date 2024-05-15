@@ -120,6 +120,7 @@ const deleteNoteByIdHandler = (request, h) => {
             status: 'success',
             message: 'Note has successfully deleted',
         });
+        response.type("application/json");
         response.code(200);
         return response;
     }
