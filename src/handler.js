@@ -69,7 +69,7 @@ const getNoteByIdHandler = (request, h) => {
    
     const response = h.response({
       status: 'fail',
-      message: 'Catatan tidak ditemukan',
+      message: 'Not found note',
     });
     response.code(404);
     return response;
@@ -95,7 +95,7 @@ const editNoteByIdHandler = (request, h) => {
    
       const response = h.response({
         status: 'success',
-        message: 'Catatan berhasil diperbarui',
+        message: 'Note has successfully revised',
       });
       response.code(200);
       return response;
@@ -103,7 +103,7 @@ const editNoteByIdHandler = (request, h) => {
    
     const response = h.response({
       status: 'fail',
-      message: 'Gagal memperbarui catatan. Id tidak ditemukan',
+      message: 'Failed to revise the note',
     });
     response.code(404);
     return response;
